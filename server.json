@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.ocark/coinverdict",
+  "description": "Free AI crypto research verdicts, refreshed daily: graded stance, technical/sentiment/funding/KOL dimensions, and key levels for 67+ coins.",
+  "repository": {
+    "url": "https://github.com/OCArk/coinverdict-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.coinverdict.io/mcp"
+    }
+  ]
+}
