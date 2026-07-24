@@ -24,8 +24,12 @@ claude mcp add --transport http coinverdict https://mcp.coinverdict.io/mcp
 
 | Tool | Description |
 |---|---|
-| `get_verdict(symbol)` | Today's research verdict for a coin (e.g. `BTC`, `ETH`, `SOL`): stance, graded dimensions, key support/resistance, invalidation, risks, and a link to the full dossier. |
-| `list_coins()` | All coins covered by daily verdicts (67+). |
+| `get_verdict(symbol)` | Today's research verdict for a coin (e.g. `BTC`, `ETH`, `SOL`): stance, graded dimensions (technical · sentiment · funding · KOL), key support/resistance, invalidation, risks, and a link to the full dossier. |
+| `list_coins()` | Every coin symbol covered by a daily verdict (100 major assets). Use it to discover which symbols the other tools accept. |
+| `get_track_record(symbol)` | The **settled** track record for a coin — CoinVerdict's differentiator. Every past daily verdict is scored 7 days later against BTC (win / loss / push). Returns the coin's W/L/P scoreboard plus recent settled calls. |
+| `get_receipts()` | The overall settled scoreboard across all coins: directional win rate, wins/losses/pushes, neutral count, and the settlement rule. The public accountability record. |
+| `get_market_overview()` | Today's verdict for **all** covered coins in one call — the full docket: each coin's current stance and headline. |
+| `get_kol_leaderboard()` | The KOL settlement leaderboard: crypto influencers ranked by their **settled** hit rate (from VeraMind's ledger), with sample size. |
 
 ## Example
 
